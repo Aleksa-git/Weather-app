@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e57d679f44.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <form class="searchcity" id="formsearch">
+      <input type="text" placeholder="Enter city" id="inputcity"/>
+      <button type="submit">
+        <i class="fa-solid fa-magnifying-glass glassearch"></i>
+      </button>
+      <button type="button" class="geo" id="geo">my
+          <i class="fa-solid fa-magnifying-glass-location"></i>
+        </button>
+    </form>
+    <div class="main container"
+    <div class="row"
+    <div class="col">
+        <div class="row weather-panel">
+          <div class="col text-center currentsity">
+            <i class="fa-solid fa-cloud-showers-heavy bigshowers-heavy"></i>
+            <br />
+            <h2 id="currentcity">Paris</h2>
+            <h4 class= "current-weather">light rain</h4>
+            <h5 id="currentday"></h5>
+          </div>
+          <div class="col text-center currenttemperature">
+              <h1><span id="currtemp">33</span><span class="units">
+                  <a href="#" id="celsius-link">°C</a>/
+                  <a href="#" id="fahrenheit-link">°F</a>
+                </span></h1>
+              <h5><i class="fa-solid fa-droplet"></i>  80%</h5>
+              <h5><i class="fa-solid fa-wind"></i>  5 km/h</h5>
+              </div>
+          <div class="row"
+          <div class="col">
+            <ul class="list-inline row forecast">
+              <li class="col text-center week">
+                <p><i class="fa-solid fa-cloud-showers-heavy"></i><br>23°C</p>
+                <h6>Mon</h6>
+              </li>
+              <li class="col text-center week">
+                <p><i class="fa-solid fa-cloud-sun"></i><br>23°C°</p>
+                <h6>Tue</h6>
+              </li>
+              <li class="col text-center week">
+                <p><i class="fa-solid fa-cloud-sun"></i><br>23°C</p>
+                <h6>Wed</h6>
+              </li>
+              <li class="col text-center week">
+                <p><i class="fa-solid fa-cloud-showers-heavy"></i><br>23°C</p>
+                <h6>Thu</h6>
+              </li>
+              <li class="col text-center week">
+                <p><i class="fa-solid fa-cloud-sun"></i><br>23°C</p>
+                <h6>Fri</h6>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
