@@ -71,7 +71,7 @@ button {
   left: 343px;
 }
 .forecast {
-   width: 500px;
+   padding-left: 70px;
 }
 .bigshowers-heavy {
   font-size: 65px;
